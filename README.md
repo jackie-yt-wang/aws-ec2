@@ -1,6 +1,6 @@
 ## Extracting Job Data from The Muse API and Saving it to S3
 ### Description
-This is a project to extract job data from The Muse API and save it as a CSV file in an S3 bucket. The project consists of a Python script, `muse-job-api.py`, that reads data from the API using the requests library, extracts the required data, manipulates it, and saves it as a CSV file. The `init.sh` is written on a EC2 Ubuntu instanceto set up the `pipenv` virtual environment on your instance. Then the shell script, `run.sh`, runs the Python script, and uploads the resulting CSV file to an S3 bucket.
+This is a project to extract job data from The Muse API and save it as a CSV file in an S3 bucket. The project consists of a Python script, `muse-job-api.py`, that reads data from the API using the requests library, extracts the required data, manipulates it, and saves it as a CSV file. The `init.sh` is written on a EC2 Ubuntu instance to set up the `pipenv` virtual environment on your instance. Then the shell script, `run.sh`, runs the Python script, and uploads the resulting CSV file to an S3 bucket.
 
 ### Prerequisite to use this repo
 - An AWS account
