@@ -1,0 +1,22 @@
+Start to run Python Script
+Traceback (most recent call last):
+  File "/home/ubuntu/muse-job-api/muse-job-api.py", line 42, in <module>
+    resultsDF.to_csv('output/'+filename,index=False)
+  File "/home/ubuntu/.local/share/virtualenvs/muse-job-api-KkNLlmec/lib/python3.10/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/ubuntu/.local/share/virtualenvs/muse-job-api-KkNLlmec/lib/python3.10/site-packages/pandas/core/generic.py", line 3720, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+  File "/home/ubuntu/.local/share/virtualenvs/muse-job-api-KkNLlmec/lib/python3.10/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/ubuntu/.local/share/virtualenvs/muse-job-api-KkNLlmec/lib/python3.10/site-packages/pandas/io/formats/format.py", line 1189, in to_csv
+    csv_formatter.save()
+  File "/home/ubuntu/.local/share/virtualenvs/muse-job-api-KkNLlmec/lib/python3.10/site-packages/pandas/io/formats/csvs.py", line 241, in save
+    with get_handle(
+  File "/home/ubuntu/.local/share/virtualenvs/muse-job-api-KkNLlmec/lib/python3.10/site-packages/pandas/io/common.py", line 734, in get_handle
+    check_parent_directory(str(handle))
+  File "/home/ubuntu/.local/share/virtualenvs/muse-job-api-KkNLlmec/lib/python3.10/site-packages/pandas/io/common.py", line 597, in check_parent_directory
+    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
+OSError: Cannot save file into a non-existent directory: 'output'
+PYTHON RUNNING FAILED
+[ERROR:] RETURN CODE:  1
+[ERROR:] REFER TO THE LOG FOR THE REASON FOR THE FAILURE.

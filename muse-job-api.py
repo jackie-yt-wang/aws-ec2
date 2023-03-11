@@ -39,5 +39,6 @@ for post in results:
      ,'Job Name':jobname,'Job Type':jobtype})
 
 resultsDF = pd.DataFrame(resultsList)
-resultsDF.to_csv(filename,index=False)
+os.mkdir('output')
+resultsDF.to_csv('output/'+filename,index=False)
 s3_client.upload_file(filename, bucketname, foldername+filename)
